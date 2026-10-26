@@ -1,0 +1,69 @@
+TINY11 BUILD INFORMATION
+
+OVERVIEW
+A customized Windows 11 Pro x64 image created on October 24, 2026.
+
+This repository documents a generated ISO. It does not contain the Tiny11
+builder application's source code or a standalone build script.
+
+BUILD DETAILS
+Windows edition: Windows 11 Pro, x64
+Version: 10.0.26300.9457
+Source image index: 6
+Mode: Tiny11
+Flavor: Regular
+Compression: Recovery
+.NET Framework 3.5: Enabled in the recipe
+Compact installation: Enabled in the recipe
+Turbo mode: Enabled
+Output: tiny11-20261024-204553.iso
+Output size: 5,710,086,144 bytes (approximately 5.32 GiB)
+
+SELECTED CUSTOMIZATIONS
+The recipe selects app removals and Windows customizations including Copilot,
+Teams, Xbox apps, Edge, OneDrive, widgets, privacy settings, hardware checks,
+reserved storage, and device encryption.
+
+A selection records intent. The individual operation results establish what
+actually happened.
+
+VALIDATION STATUS
+The job reports completion, and the report lists no warnings.
+BootValidated is false: these records do not establish that the ISO boots,
+installs, or behaves correctly in a running system.
+
+Some cleanup operations were skipped because servicing operations were pending.
+Offline registry changes do not establish that Windows enforces the
+corresponding policies.
+
+The build report records the original ISO's SHA-256. The value and the
+PowerShell command for checking a download are in INSTRUCTIONS.txt.
+
+LOCAL BUILD RECORDS
+The original local archive contains this folder:
+tiny11-c56260c4430846f1bb4858fba72b3448/
+
+The following records are not included in this repository:
+- recipe.json: Input paths, selected customization options, and build settings.
+- report.json: Image metadata, feature outcomes, output size, and checksum.
+- operations.json: Individual operation results. Inspect these before treating
+  a selected option as successfully applied.
+- timings.json: Elapsed time for each build stage.
+- job.json: Build job identifier and completion status.
+- build.log and dism.log: Local diagnostic logs.
+
+REBUILDING
+Rebuilding requires the builder that produced the recipe, compatible source
+Windows media, DISM, and oscdimg.
+
+The recipe contains machine-specific paths; update them for your environment.
+The builder version and source are not recorded here, so this archive alone
+is insufficient for a reproducible rebuild.
+
+REPOSITORY CONTENTS
+The README contains the download link. INSTRUCTIONS.txt describes downloading
+and verifying the file. BUILD_INFO.txt contains the build and validation notes.
+
+The ISO is hosted on Google Drive and is not stored in Git history.
+Build records contain machine-specific paths and remain local unless separately
+reviewed for publication.

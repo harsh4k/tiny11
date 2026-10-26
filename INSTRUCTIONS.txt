@@ -1,0 +1,27 @@
+TINY11 DOWNLOAD AND VERIFICATION INSTRUCTIONS
+
+DOWNLOAD
+Open this Google Drive link and use the Download button:
+https://drive.google.com/file/d/1RQan2hQp8zaQBkQhhfsRoOxafUWz1-E2/view?usp=drivesdk
+
+File: tiny11-20261024-204553.iso
+Size: 5,710,086,144 bytes (approximately 5.32 GiB)
+Anyone with the link can view and download the file.
+
+This is the complete ISO. No ZIP extraction or file reassembly is required.
+
+VERIFY THE DOWNLOAD (OPTIONAL)
+In PowerShell, open the folder containing the downloaded ISO and run:
+
+Get-FileHash -LiteralPath .\tiny11-20261024-204553.iso -Algorithm SHA256
+
+Compare the result with this expected SHA-256:
+
+1C993210431B2A67A7AD98DA36B7664528DE19198BEF4FD5380CECCD5446BE98
+
+The values must match exactly, ignoring letter case. If they do not match,
+download the file again before using it.
+
+BUILD AND TESTING NOTES
+Read BUILD_INFO.txt for the image settings, recorded operation limitations,
+validation status, local build records, and rebuilding requirements.

@@ -1,0 +1,20 @@
+# Generated Windows installation media
+*.iso
+*.wim
+*.esd
+release-assets/
+release-assets-preparation.json
+release-assets-preparation.out.log
+release-assets-preparation.err.log
+
+# Local diagnostics and job locks
+*.log
+*.lock
+
+# Local automation records
+.agent/
+
+# Credentials and machine configuration
+.env*
+*.pem
+*.key
